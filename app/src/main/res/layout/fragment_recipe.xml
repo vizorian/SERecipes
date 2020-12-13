@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resource_cost"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/material"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quantity"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/cobaltRow"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/cobaltMat_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/cobaltCost_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/goldRow"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/goldMat_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/goldCost_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/ironRow"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/ironMat_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/ironCost_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/magnesiumRow"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/magnesiumMat_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/magnesiumCost_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/nickelRow"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/nickelMat_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/nickelCost_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/platinumRow"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/platinumMat_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/platinumCost_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/siliconRow"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/siliconMat_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/siliconCost_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/silverRow"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/silverMat_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/silverCost_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/gravelRow"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/gravelMat_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/gravelCost_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/back"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/radio_one"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/backButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radio_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1x"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radio_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_10x"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radio_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_100x"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radio_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1000x"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/itemName_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item name"
+        android:textColor="@android:color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="96dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="20dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

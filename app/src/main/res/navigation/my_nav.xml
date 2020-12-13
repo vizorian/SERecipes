@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/menuFragment">
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.serecipes.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_browserFragment"
+            app:destination="@id/browserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.serecipes.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.serecipes.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/browserFragment"
+        android:name="com.example.serecipes.BrowserFragment"
+        android:label="fragment_browser"
+        tools:layout="@layout/fragment_browser" >
+        <action
+            android:id="@+id/action_browserFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_browserFragment_to_recipeFragment"
+            app:destination="@id/recipeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeFragment"
+        android:name="com.example.serecipes.RecipeFragment"
+        android:label="fragment_recipe"
+        tools:layout="@layout/fragment_recipe" >
+        <action
+            android:id="@+id/action_recipeFragment_to_browserFragment"
+            app:destination="@id/browserFragment" />
+        <argument
+            android:name="currentRecipe"
+            app:argType="com.example.serecipes.data.Recipe" />
+    </fragment>
+</navigation>
